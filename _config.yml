@@ -42,7 +42,7 @@ urlimg: 'https://github.com/adityabalu/TrAC/images/'
 
 
 # Logo size is 600x80 pixels
-logo: "logo.png"
+logo: '<a href="#" data-reveal-id="videoModal"><img src="https://adityabalu.github.io/TrAC/images/logo.png" width="302" height="182" alt=""/></a>'
 
 # Plugins
 plugins:

@@ -1,35 +1,35 @@
-- title: Start
+- title: Home
   url: "/"
   side: left
 
-- title: Getting Started
-  url: "/getting-started/"
+- title: About
+  url: "/About/"
   side: left
 
-- title: "Templates"
-  url: "/design/"
+- title: "Research"
+  url: "/Research/"
   side: left
   dropdown:
-  - title: "Grid & Colors"
-    url: "/design/grid/"
-  - title: "Typography"
-    url: "/design/typography/typography/"
-  - title: "Page/Post"
-    url: "/design/page/"
+  - title: "AI Core"
+    url: "/Research/Core/"
+  - title: "Materials, Design and Manufacturing"
+    url: "/Research/MDM/"
+  - title: "Autonomy"
+    url: "/Research/Autonomy/"
   - title: "Post-Left-Sidebar"
-    url: "/design/post-left-sidebar/"
+    url: "/Research/post-left-sidebar/"
   - title: "Post-Right-Sidebar"
-    url: "/design/post-right-sidebar/"
+    url: "/Research/post-right-sidebar/"
   - title: "Page Full-Width"
-    url: "/design/page-fullwidth/"
+    url: "/Research/page-fullwidth/"
   - title: "Blog-Page"
     url: "/blog/"
   - title: "Video"
-    url: "/design/video/"
+    url: "/Research/video/"
   - title: "Gallery"
-    url: "/design/gallery/"
+    url: "/Research/gallery/"
   - title: "Portfolio"
-    url: "/design/portfolio/"
+    url: "/Research/portfolio/"
 
 - title: "Header Styles"
   url: "/headers/"

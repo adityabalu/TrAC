@@ -7,6 +7,12 @@
 layout: frontpage
 header:
   image_fullwidth: TrACBanner.png
+carousels:
+  - images: 
+    - image: TrACResearch.png
+    - image: TrACResearch.png
+    - image: TrACResearch.png
+    - image: TrACResearch.png
 widget1:
   title: "About"
   url: 'https://adityabalu.github.io/TrAC/blog/'
@@ -22,6 +28,15 @@ widget3:
   url: 'https://github.com/Phlow/feeling-responsive'
   image: TrACResearch.png
   text: '<em>Publications</em> will come here.'
+
+news:
+  defaults:
+    layout: post
+  output: true
+  permalink: /_news/:path/
+
+news_limit: 5
+
 #
 # Use the call for action to show a button on the frontpage
 #

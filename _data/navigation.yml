@@ -53,12 +53,16 @@
   - title: "Openings and other opportunities"
     url: "/Resources/opportunities/"
 
-- title: Blogs
+- title: Media
   url: "/blog/"
   side: left
   dropdown:
-  - title: "Blog Archive"
+  - title: "Blogs"
     url: "/blog/archive/"
+  - title: "Youtube Videos"
+    url: "/blog/Youtube"
+  - title: "Podcasts"
+    url: "/blog/podcasts/"
 
 - title: "Search"
   url: "/search/"

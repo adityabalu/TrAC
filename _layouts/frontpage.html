@@ -2,16 +2,16 @@
 layout: default
 format: frontpage
 ---
-<div id="header-home">
-    <div class="row">
-        <div class="small-12 columns">
-        </div><!-- /.medium-4.columns -->
-    </div><!-- /.row -->
-</div><!-- /#header-home -->
+<div class="row t60">
+    <div class="medium-4 columns frontpage-widget">
+        {% include _carousel.html height="100" width="200" unit="%" duration="7" number="1" %}
+    </div>
+    <div class="medium-4 columns frontpage-widget">
+        {% include _news.html %}
+    </div>
+</div>
 
-
-{% include carousel.html height="25" width="50" width2="20" unit="%" duration="7" number="1" %}
-
+<h2>More Information ...</h2>
 
 {% comment %}
 *
@@ -109,6 +109,3 @@ format: frontpage
 *
 {% endcomment %}
 
-<div class="row">
-    {{ content }}
-</div><!-- /.row -->

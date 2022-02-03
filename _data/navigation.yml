@@ -23,6 +23,10 @@
   - title: "Health & Quality of Life"
     url: "/Research/HQL/"
 
+- title: "Projects"
+  url: "/Projects/"
+  side: left
+
 - title: "Publications"
   url: "/Publications/"
   side: left

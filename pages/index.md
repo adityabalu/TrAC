@@ -5,8 +5,6 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-header:
-  title: "Translational AI Center"
 carousels:
   - images: 
     - image: carousel/ExampleCarousel1.png
@@ -15,12 +13,16 @@ carousels:
     - image: carousel/ExampleCarousel1.png
 widget1:
   title: "About"
-  url: 'https://adityabalu.github.io/TrAC/blog/'
-  image: TrACResearch.png
+  url: 'https://adityabalu.github.io/TrAC/About/'
+  image: logo.png
 widget2:
   title: "Research"
-  url: 'https://adityabalu.github.io/TrAC/info/'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="https://adityabalu.github.io/TrAC/images/TrACResearch.png" width="302" height="182" alt=""/></a>'
+  url: 'https://adityabalu.github.io/TrAC/Research/'
+  image: TrACResearch.png
+# widget2:
+#   title: "Research"
+#   url: 'https://adityabalu.github.io/TrAC/info/'
+#   video: '<a href="#" data-reveal-id="videoModal"><img src="https://adityabalu.github.io/TrAC/images/TrACResearch.png" width="302" height="182" alt=""/></a>'
 widget3:
   title: "Publications"
   url: 'https://adityabalu.github.io/TrAC/Publications/'

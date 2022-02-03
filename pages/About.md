@@ -1,0 +1,86 @@
+---
+title: "About"
+layout: about
+excerpt: "TrAC: Team members"
+sitemap: false
+permalink: /About/
+---
+
+# Director of Translational AI Center
+
+{% for member in site.data.PI %}
+
+<div class="row" style="text-align:justify">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left"/>
+  <h4>{{ member.name }}</h4>
+  <{{ member.email }}>
+  <ul style="list-style-type:none">
+
+  {% if member.number_educ == 1 %}
+  <li> {{ member.education1 }} </li>
+  {% endif %}
+  </ul>
+</div>
+{% endfor %}
+
+<br>
+
+## Core Team
+ 
+{% for member in site.data.core_team %}
+
+<div class="row">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
+  <h4>{{ member.name }}</h4>
+  <{{ member.email }}>
+  <ul style="list-style-type:none">
+
+  {% if member.number_educ == 1 %}
+  <li> {{ member.education1 }} </li>
+  {% endif %}
+  </ul>
+</div>
+
+{% endfor %}
+
+
+<br>
+
+## Other Team Members
+
+{% assign number_printed = 0 %}
+{% for member in site.data.team %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="medium-4 columns" style="text-align:justify">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img" width="100px" style="padding: 10px; float: left" />
+  <h4>{{ member.name }}</h4>
+  {{ member.email }}
+  <ul style="list-style-type: none">
+  
+  {% if member.number_educ == 2 %}
+  <b>Research Interests:</b> {{ member.education1 }}<br>
+  <b>Thrust Area:</b> {{ member.education2 }}
+  {% endif %}
+  </ul>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+<br>
+

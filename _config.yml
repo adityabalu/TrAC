@@ -167,3 +167,8 @@ sass:
 # used in _includes/footer_scripts
 
 # google_analytics_tracking_id:
+
+
+header:
+  title: "Translational AI Center"
+  pattern: Banner.svg

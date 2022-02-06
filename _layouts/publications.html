@@ -35,7 +35,7 @@ format: publications
 
 
 <div class="container" style="padding:20px">
-<ol>
+<ol reversed>
 {% for citation in pub_list %}
   {% if include.venue %}
     {% assign publication = citation.Publication | downcase %}

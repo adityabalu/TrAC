@@ -11,11 +11,11 @@
   side: left
   dropdown:
   - title: "AI Core"
-    url: "/Research/Core/"
+    url: "/Research/aicore/"
   - title: "Materials, Design & Manufacturing"
-    url: "/Research/MDM/"
+    url: "/Research/materialsdesign/"
   - title: "Autonomy"
-    url: "/Research/Autonomy/"
+    url: "/Research/autonomy/"
   - title: "Food, Energy & Water"
     url: "/Research/FEW/"
   - title: "Ethics"
@@ -36,13 +36,13 @@
   side: left
   dropdown:
   - title: "Weekly Seminars"
-    url: "/Seminars/"
+    url: "/seminars/"
   - title: "Journal Club"
-    url: "/JournalClub/"
+    url: "/journalclub/"
   - title: "Tutorials & Bootcamps"
-    url: "/Tutorials/"
+    url: "/tutorials/"
   - title: "Workshops"
-    url: "/Workshops/"
+    url: "/workshops/"
 
 - title: Resources
   url: "/Resources/"

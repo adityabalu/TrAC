@@ -1,0 +1,15 @@
+---
+layout: default
+format: projectspage
+---
+
+{{content}}
+
+
+<div class="row t60">
+	{% for item in site.data[page.items] %}
+	{% if item.image or item.video or item.title %}
+		{% include _frontpage-widget.html widget=item %}
+	{% endif %}
+	{% endfor %}
+</div>

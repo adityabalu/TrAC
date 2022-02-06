@@ -4,7 +4,7 @@ layout: default
 <h1>Director of Translational AI Center</h1>
 
 
-{% for member in site.data.PI %}
+{% for member in site.data.people.PI %}
 
 <div class="row" style="text-align:justify">
   <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left"/>
@@ -23,7 +23,7 @@ layout: default
 
 <h2>Core Team</h2>
  
-{% for member in site.data.core_team %}
+{% for member in site.data.people.core_team %}
 
 <div class="row">
   <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
@@ -45,7 +45,7 @@ layout: default
 <h2>Other Team Members</h2>
 
 {% assign number_printed = 0 %}
-{% for member in site.data.team %}
+{% for member in site.data.people.team %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	{% assign url = site.baseurl | prepend: site.url %}
+
+	<head>
+		{% include _head.html %}
+		<title>Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url }}/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		{% unless page.skip_boilerplate %}
+		{% include _navigation.html %}
+		{% endunless %}
+
+		{% include _masthead.html %}
+		
+	<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+				<article class="post featured">
+					<header class="major">
+						<h2><a href="#">Research</a></h2>
+						<p> Some text needed here</p>
+					</header>
+					<a href="#" class="image main"><img src="{{ url }}/images/TrACResearch.png" alt="" /></a>
+				</article>
+
+			<!-- Posts -->
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/aicore.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Core AI algorithms development</p>
+						<a href="aicore" class="button" style="float: left">More details</a>
+						
+					</article>
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/autonomy.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Autonomy</p>
+						<ul class="actions special">
+							<li><a href="autonomy" class="button" style="float: left" > More details</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/ethics.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Ethics</p>
+						<a href="ethics" class="button" style="float: left">More details</a>
+						
+					</article>
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/materialsdesign.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Materials, Design and Manufacturing</p>
+						<ul class="actions special">
+							<li><a href="materialsdesign" class="button" style="float: left" > More details</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/foodenergywater.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Food, Energy & Water</p>
+						<a href="foodenergywater" class="button" style="float: left">More details</a>
+						
+					</article>
+					<article>
+						<header>
+							<h2><a href="#"> </a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="{{ url }}/images/healthcare.png" style="max-width: 50%; float: center" alt="" /></a>
+						<p>Health & Quality of Life</p>
+						<ul class="actions special">
+							<li><a href="healthcare" class="button" style="float: left" > More details</a></li>
+						</ul>
+					</article>
+				</section>
+
+		</div>
+
+
+
+		{% unless page.skip_boilerplate %}
+		{% include _footer.html %}
+		{% endunless %}
+
+		{% include _footer_scripts.html %}
+
+		<!-- Scripts -->
+			<script src="{{ url }}/assets/js/jquery.min.js"></script>
+			<script src="{{ url }}/assets/js/jquery.scrollex.min.js"></script>
+			<script src="{{ url }}/assets/js/jquery.scrolly.min.js"></script>
+			<script src="{{ url }}/assets/js/browser.min.js"></script>
+			<script src="{{ url }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ url }}/assets/js/util.js"></script>
+			<script src="{{ url }}/assets/js/main.js"></script>
+
+	</body>
+</html>

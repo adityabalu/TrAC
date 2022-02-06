@@ -2,7 +2,7 @@
 layout: researchpage
 excerpt: "Materials Design and Manufacturing"
 sitemap: false
-permalink: /Research/materialsdesign
+permalink: /Research/materialsdesign/
 items: materialsdesign
 ---
 

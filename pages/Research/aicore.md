@@ -2,7 +2,7 @@
 layout: researchpage
 excerpt: "Core AI Developments"
 sitemap: false
-permalink: /Research/aicore
+permalink: /Research/aicore/
 items: aicore
 ---
 

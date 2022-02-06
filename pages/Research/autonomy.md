@@ -2,7 +2,7 @@
 layout: researchpage
 excerpt: "Autonomy, Intelligent transportation and Smart infrastructure"
 sitemap: false
-permalink: /Research/autonomy
+permalink: /Research/autonomy/
 items: autonomy
 ---
 

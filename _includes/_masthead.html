@@ -1,10 +1,10 @@
 {% if site.header.title %}
-<div id="masthead-with-text" style="{% if site.header.background-color %}background: {{ site.header.background-color }};{% endif %} {% if site.header.image_fullwidth %}{% elsif site.header.pattern %}background:url('{{ site.url }}{{ site.baseurl }}/images/{{ site.header.pattern }}'){% endif %}">
+<div id="masthead-with-text" style="{% if site.header.image_fullwidth %}background:url('{{ site.url }}{{ site.baseurl }}/images/{{ site.header.image_fullwidth }}'{% endif %}">
 	<div class="masthead-title">{{ site.header.title }}</div>
 </div><!-- /#masthead -->
-
 {% if site.breadcrumb == true %}
 {% include _breadcrumb.html %}
 {% endif %}
 
 {% endif %}
+

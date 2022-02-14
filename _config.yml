@@ -171,4 +171,5 @@ sass:
 
 header:
   title: "Translational AI Center"
-  pattern: Banner.svg
+  image_fullwidth: "TrAC_web_landing.png"
+  background-color: "#01037a"

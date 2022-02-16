@@ -27,13 +27,10 @@ layout: default
 
 <div class="row">
   <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
-  <h4>{{ member.name }}</h4>
-  <p>{{ member.email}}</p>
+  <h4><a href="{{member.webpage}}">{{ member.name }}</a></h4>
+  <p><a href="tomail:{{member.email}}">{{ member.email }}</a></p>
   <ul style="list-style-type:none">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
+  <li> {{ member.description }} </li>
   </ul>
 </div>
 

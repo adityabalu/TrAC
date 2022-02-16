@@ -7,10 +7,10 @@
 layout: frontpage
 carousels:
   - images: 
-    - image: carousel/ExampleCarousel1.png
-    - image: carousel/ExampleCarousel1.png
-    - image: carousel/ExampleCarousel1.png
-    - image: carousel/ExampleCarousel1.png
+    - image: carousel/team_fall_2021.png
+    - image: carousel/Carousel-content.png
+    - image: carousel/Carousel-content.png
+    - image: carousel/Carousel-content.png
 widget1:
   title: "About"
   url: 'https://adityabalu.github.io/TrAC/About/'

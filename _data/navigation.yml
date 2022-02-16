@@ -23,6 +23,10 @@
   - title: "Health & Quality of Life"
     url: "/Research/HQL/"
 
+- title: "Industry Sponsors"
+  url: "/Sponsors/"
+  side: left
+
 - title: "Projects"
   url: "/Projects/"
   side: left

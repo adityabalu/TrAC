@@ -2,7 +2,7 @@
 
 
 .hero-section {
-  background: url('../../images/TrAC_web_landing.png') 100% no-repeat, linear-gradient(to bottom, #000 0%, #000 100%);
+  background: url('../../images/TrAC_web_landing.png') 100% no-repeat, linear-gradient(to bottom, $topbar-bg 0%, $topbar-bg 100%);
   background-size: 100%;
   height: auto;
   min-height: 100vh;
@@ -17,7 +17,7 @@
     font-size: 1.75rem;
     line-height: 1.75rem;
     letter-spacing: 0.5rem;
-    color: #f2d25b;
+    color: $hero-color;
     display: flex;
     align-self: flex-end;
     padding-bottom: 29vh;

@@ -1,6 +1,10 @@
 - title: COntext-Aware LEarning for Sustainable CybEr-agricultural (COALESCE) systems
+  PrincipalInvestigator: Soumik Sarkar
   text: ‘COntext-Aware LEarning for Sustainable CybEr-agricultural (COALESCE) systems’ seeks to design a scale-agnostic, cyber-agricultural system that provides individualized plant management (i.e., customized treatment for each individual plant/plot) over farm-level coverage areas. COALESCE is a trans-disciplinary team seeking to bring Cyber-Physical Systems (CPS) principles to sustainable agriculture. The mission is to disrupt the current agricultural practices with CPS innovations to enhance efficiency, resiliency, sustainability and autonomy. To achieve this, key technological innovations include the adaptation of individualized sensing, individualized modeling, and individualized actuation via context-aware machine learning and coordinated teams of robots that are enabled by autonomy algorithms, soft and dexterous manipulators, and adaptive networking algorithms.
   image: projects/coalesce.jpg
+  Sponsor: National Science Foundation
+  Dates: 7/2022 - 6/2024
+  FY: 2022
   website: https://coalesce.me.iastate.edu/
 - title: AI Institute for Resilient Agriculture
   text: AIIRA's vision is to create new AI-driven, predictive digital twins for modeling plants, and deploy them to increase the resiliency of the nation’s agricultural systems.

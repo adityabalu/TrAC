@@ -15,38 +15,43 @@ format: projectspage
 </div> -->
 
 {% for project in site.data.projects %}
-	<div class="panel">
-		<div class="panel-heading">
-			<div class="label"> {{project.FY}} </div> <h4> {{project.title}} </h4>
-		</div> <!-- panel-heding -->
-		<div class="panel-body">
-			<div class="row">
-				<div class="medium-4 columns">
-					<h4>Funding Agency</h4>
-					<div><a href="{{project.funding-agency-website}}" target="_blank">{{project.funding-agency}}</a></div>
-					<h4>Award #</h4>
-					{{project.award}}
-					<h4>Dates</h4>
-					<div>{{project.Dates}}</div>
-				</div> <!-- column -->
-				<div class="medium-3 columns">
-					<h4>Principal Investigator</h4>
-						<div>{{project.PrincipalInvestigator}}</div>
-				</div> <!-- column -->
-				<div class="medium-5 columns">
-					{% if project.image != empty %}
-						<img src="{{ site.url }}{{ site.baseurl }}/images/{{project.image }}" alt="" />
-					{% else %}
-						<p> coming soon ... </p>
-					{% endif %} 
-				</div>
-			</div> <!-- row -->
-			<div class="row" style="text-align: justify; padding: 30px">
-					<h4>Abstract</h4>
-					<p>
-						{{project.text}}
-					</p>
+<div class="panel">
+	<div class="panel-heading">
+		<div class="label"> {{project.FY}} </div>
+		<h4> {{project.title}} </h4>
+	</div> <!-- panel-heding -->
+	<div class="panel-body">
+		<div class="row">
+			<div class="medium-4 columns">
+				<h4>Funding Agency</h4>
+				<div><a href="{{project.funding-agency-website}}" target="_blank">{{project.funding-agency}}</a></div>
+				<h4>Award #</h4>
+				{{project.award}}
+				<h4>Dates</h4>
+				<div>{{project.Dates}}</div>
+			</div> <!-- column -->
+			<div class="medium-3 columns">
+				<h4>Principal Investigator</h4>
+				<div> <a href="{{project.PI-website}}" target="_blank">{{project.PrincipalInvestigator}} </a> </div>
+				<h4>co-PIs</h4>
+				{% for co-pi in project.co-PI %}
+				<div><a href="{{co-pi.webpage}}" target="_blank">{{co-pi.name}}</a></div>
+				{% endfor %}
+			</div> <!-- column -->
+			<div class="medium-5 columns">
+				{% if project.image != empty %}
+				<img src="{{ site.url }}{{ site.baseurl }}/images/{{project.image }}" alt="" />
+				{% else %}
+				<p> coming soon ... </p>
+				{% endif %}
 			</div>
-		</div> <!-- panel-body -->
-	</div> <!-- panel -->
+		</div> <!-- row -->
+		<div class="row" style="text-align: justify; padding-left: 30px; padding-right:30px">
+			<h4>Abstract</h4>
+			<p>
+				{{project.text}}
+			</p>
+		</div>
+	</div> <!-- panel-body -->
+</div> <!-- panel -->
 {% endfor %}

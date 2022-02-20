@@ -3,7 +3,6 @@ layout: default
 format: publications
 ---
 
-
 {% assign pub_list = site.data.publications | sort: "Year" | reverse %}
 {% assign style = include.style | downcase | default: "apa" %}
 {% assign include_link = include.link %}
@@ -32,6 +31,8 @@ format: publications
 
 
 <h1> Publications List </h1>
+
+{{content}}
 
 
 <div class="container" style="padding:20px">

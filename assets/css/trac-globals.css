@@ -17,7 +17,7 @@ body#top-of-page > div.container-fluid {
     padding: 0px 0 10px 0;
 }
 
-#navigation.sticky{
+/* #navigation.sticky{
     visibility:hidden;
     transition:ease-out;
     transform: 2s;
@@ -27,4 +27,4 @@ body#top-of-page > div.container-fluid {
     visibility:unset;
     transition:ease-in;
     transform: 2s;
-}
+} */

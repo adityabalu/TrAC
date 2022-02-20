@@ -6,15 +6,12 @@ layout: default
 
 {% for member in site.data.people.PI %}
 
-<div class="row" style="text-align:justify">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left"/>
-  <h4>{{ member.name }}</h4>
-  <p>{{ member.email}}</p>
+<div class="row">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
+  <h4><a href="{{member.webpage}}">{{ member.name }}</a></h4>
+  <p><a href="tomail:{{member.email}}">{{ member.email }}</a></p>
   <ul style="list-style-type:none">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
+  <li> {{ member.description }} </li>
   </ul>
 </div>
 {% endfor %}
@@ -22,11 +19,17 @@ layout: default
 <br>
 
 <h2>Core Team</h2>
- 
-{% for member in site.data.people.core_team %}
+
+{% assign core_list = site.data.people.core_team | sort: "name"  %}
+
+{% for member in core_list %}
 
 <div class="row">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
+  {% if member.photo %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="padding: 10px; float: left" />
+  {% else %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/members/avatar.jpg" class="img" width="100px" style="padding: 10px; float: left" />
+  {% endif %}
   <h4><a href="{{member.webpage}}">{{ member.name }}</a></h4>
   <p><a href="tomail:{{member.email}}">{{ member.email }}</a></p>
   <ul style="list-style-type:none">
@@ -41,8 +44,10 @@ layout: default
 
 <h2>Other Team Members</h2>
 
+{% assign member_list = site.data.people.team | sort: "name"  %}
+
 {% assign number_printed = 0 %}
-{% for member in site.data.people.team %}
+{% for member in member_list %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -50,16 +55,18 @@ layout: default
 <div class="row">
 {% endif %}
 
-<div class="medium-4 columns" style="text-align:justify">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img" width="100px" style="padding: 10px; float: left" />
-  <h4>{{ member.name }}</h4>
-  <p>{{ member.email}}</p>
-  <ul style="list-style-type: none">
-  
-  {% if member.number_educ == 2 %}
-  <b>Research Interests:</b> {{ member.education1 }}<br>
-  <b>Thrust Area:</b> {{ member.education2 }}
+<div class="medium-6 columns" style="text-align:justify">
+  {% if member.photo %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img" width="300px" height="300px" style="padding: 10px; float: left" />
+  {% else %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/members/avatar.jpg" class="img" width="100px" style="padding: 10px; float: left" />
   {% endif %}
+  <h4><a href="{{member.webpage}}">{{ member.name }}</a></h4>
+  <p><a href="tomail:{{member.email}}">{{ member.email }}</a></p>
+  <br>
+  <ul style="list-style-type: none">
+  <li> <b>Thrust Area:</b> {{ member.thrust_area }} </li>
+  <li> <b>Research Interests:</b> {{ member.research_interests }}<br> </li>
   </ul>
 </div>
 
@@ -76,6 +83,8 @@ layout: default
 </div>
 {% endif %}
 <br>
+
+
 
 
 

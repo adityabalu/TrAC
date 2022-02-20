@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', event => {
     var heroscroll = function() {
       $(window).scroll(function() {
         var winTop = $(window).scrollTop();
-        if (winTop >= 300) {
+        if (winTop >= 200) {
           $("body").addClass("hero-section-text");
         } else{
           $("body").removeClass("hero-section-text");

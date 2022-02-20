@@ -1,9 +1,5 @@
 - name: Soumik Sarkar
   photo: Soumik_Sarkar.png
-  info: Director of TrAC
+  webpage: https://scslab.me.iastate.edu/
   email: soumiks(at)iastate.edu
-  number_educ: 1
-  education1: Soumik Sarkar is an Associate Professor in the Department of Mechanical Engineering at Iowa State Univerity. His research focuses on development of data analytics and machine learning algorithms for autonomous perception and decision-making in complex cyber-physical systems with a large variety of application areas including building energy systems, plant science and agriculture, design and manufacturing, and intelligent transportation systems. The nature of his research is inherently multi-disciplinary, involving machine learning, information theory, theory of computation, dynamical systems, topology and statistical mechanics.
-  education2: 
-  education3: 
-  education4: 
+  description: Soumik Sarkar is an Associate Professor in the Department of Mechanical Engineering at Iowa State Univerity. His research focuses on development of data analytics and machine learning algorithms for autonomous perception and decision-making in complex cyber-physical systems with a large variety of application areas including building energy systems, plant science and agriculture, design and manufacturing, and intelligent transportation systems. The nature of his research is inherently multi-disciplinary, involving machine learning, information theory, theory of computation, dynamical systems, topology and statistical mechanics.

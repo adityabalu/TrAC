@@ -1,95 +1,59 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	{% assign url = site.baseurl | prepend: site.url %}
-
-	<head>
-		{% include _head.html %}
-		<title>Research</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url }}/assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		{% unless page.skip_boilerplate %}
-		{% include _navigation.html %}
-		{% endunless %}
+---
+layout: default
+format: activities
+---
 
 
-	<!-- Main -->
-		<div id="main">
+<!-- Main -->
+<div id="main">
 
-			<!-- Featured Post -->
-				<article class="post featured">
-					<header class="major">
-						<h2><a href="#">Activities</a></h2>
-						<p> Some text needed here</p>
-					</header>
-				</article>
+	<!-- Featured Post -->
+		<article class="post featured">
+			<header class="major">
+				<h2><a href="#">Activities</a></h2>
+				<p> Some text needed here</p>
+			</header>
+		</article>
 
-			<!-- Posts -->
-				<section class="posts">
-					<article>
-						<header>
-							<h2><a href="#"> </a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="{{ url }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
-						<p>Weekly Seminars</p>
-						<a href="seminars" class="button" style="float: center">More details</a>
-						
-					</article>
-					<article>
-						<header>
-							<h2><a href="#"> </a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="{{ url }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
-						<p>Journal Club</p>
-						<ul class="actions special">
-							<li><a href="journalclub" class="button" style="float: center" > More details</a></li>
-						</ul>
-					</article>
-					<article>
-						<header>
-							<h2><a href="#"> </a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="{{ url }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
-						<p>Tutorials</p>
-						<a href="tutorials" class="button" style="float: center">More details</a>
-						
-					</article>
-					<article>
-						<header>
-							<h2><a href="#"> </a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="{{ url }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
-						<p>Workshops</p>
-						<a href="workshops" class="button" style="float: center">More details</a>
-						
-					</article>
-				</section>
+	<!-- Posts -->
+		<section class="posts">
+			<article>
+				<header>
+					<h2><a href="#"> </a></h2>
+				</header>
+				<iframe max-width="100%" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKsjpRJVRMktLe8qJpQ6I79CHLUDVua_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Weekly Seminars</p>
+				<a href="seminars/" class="button" style="float: center">More details</a>
+				
+			</article>
+			<article>
+				<header>
+					<h2><a href="#"> </a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="{{ site.url }}{{ site.baseurl }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
+				<p>Journal Club</p>
+				<ul class="actions special">
+					<li><a href="journalclub/" class="button" style="float: center" > More details</a></li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<h2><a href="#"> </a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="{{ site.url }}{{ site.baseurl }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
+				<p>Tutorials</p>
+				<a href="tutorials/" class="button" style="float: center">More details</a>
+				
+			</article>
+			<article>
+				<header>
+					<h2><a href="#"> </a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="{{ site.url }}{{ site.baseurl }}/images/activities/seminar.svg" style="max-width: 50%; float: center" alt="" /></a>
+				<p>Workshops</p>
+				<a href="workshops/" class="button" style="float: center">More details</a>
+				
+			</article>
+		</section>
 
-		</div>
-
-
-
-		{% unless page.skip_boilerplate %}
-		{% include _footer.html %}
-		{% endunless %}
-
-		{% include _footer_scripts.html %}
-
-		<!-- Scripts -->
-			<script src="{{ url }}/assets/js/jquery.min.js"></script>
-			<script src="{{ url }}/assets/js/jquery.scrollex.min.js"></script>
-			<script src="{{ url }}/assets/js/jquery.scrolly.min.js"></script>
-			<script src="{{ url }}/assets/js/browser.min.js"></script>
-			<script src="{{ url }}/assets/js/breakpoints.min.js"></script>
-			<script src="{{ url }}/assets/js/util.js"></script>
-			<script src="{{ url }}/assets/js/main.js"></script>
-
-	</body>
-</html>
+</div>

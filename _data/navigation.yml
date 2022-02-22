@@ -40,33 +40,33 @@
   side: left
   dropdown:
   - title: "Weekly Seminars"
-    url: "/seminars/"
+    url: "/Activities/seminars/"
   - title: "Journal Club"
-    url: "/journalclub/"
+    url: "/Activities/journalclub/"
   - title: "Tutorials & Bootcamps"
-    url: "/tutorials/"
+    url: "/Activities/tutorials/"
   - title: "Workshops"
-    url: "/workshops/"
+    url: "/Activities/workshops/"
 
-- title: Resources
-  url: "/Resources/"
-  side: left
-  dropdown:
-  - title: "How tos?"
-    url: "/Resources/howtos/"
-  - title: "Openings and other opportunities"
-    url: "/Resources/opportunities/"
+# - title: Resources
+#   url: "/Resources/"
+#   side: left
+#   dropdown:
+#   - title: "How tos?"
+#     url: "/Resources/howtos/"
+#   - title: "Openings and other opportunities"
+#     url: "/Resources/opportunities/"
 
-- title: Media
-  url: "/blog/"
-  side: left
-  dropdown:
-  - title: "Blogs"
-    url: "/blog/archive/"
-  - title: "Youtube Videos"
-    url: "/blog/Youtube"
-  - title: "Podcasts"
-    url: "/blog/podcasts/"
+# - title: Media
+#   url: "/blog/"
+#   side: left
+#   dropdown:
+#   - title: "Blogs"
+#     url: "/blog/archive/"
+#   - title: "Youtube Videos"
+#     url: "/blog/Youtube"
+#   - title: "Podcasts"
+#     url: "/blog/podcasts/"
 
 - title: "Search"
   url: "/search/"

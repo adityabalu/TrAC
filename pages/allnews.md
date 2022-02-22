@@ -1,7 +1,7 @@
 ---
 title: "News"
 layout: default
-excerpt: "METRICS Lab at King's College London."
+excerpt: "all news"
 sitemap: false
 permalink: /allnews.html
 ---
